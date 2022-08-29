@@ -1,7 +1,7 @@
 {
   "name": "svgapi",
-  "version": "0.0.1",
-  "main": "./lib/index.js",
+  "version": "0.0.2",
+  "main": "./dist/index.js",
   "description": "Access to 200k+ SVG Icons",
   "keywords": [
     "svg",
