@@ -1,0 +1,33 @@
+{
+  "name": "svgapi",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "description": "Access to 200k+ SVG Icons",
+  "keywords": [
+    "svg",
+    "icon"
+  ],
+  "homepage": "https://github.com/teniryte/svgapi",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "node ./node_modules/.bin/jest"
+  },
+  "author": {
+    "name": "teniryte",
+    "email": "teniryte@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:teniryte/svgapi.git"
+  },
+  "publish": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
