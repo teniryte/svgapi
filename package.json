@@ -1,6 +1,6 @@
 {
   "name": "svgapi",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "description": "Access to 200k+ SVG Icons",
   "keywords": [
@@ -10,7 +10,9 @@
   "homepage": "https://github.com/teniryte/svgapi",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.27.2"
+    "@types/lodash": "^4.14.184",
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "jest": "^26.6.3"

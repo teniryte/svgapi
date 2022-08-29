@@ -41,14 +41,18 @@ export class Client {
     });
   }
 
-  search(term: string, page: number = 1, limit: number = this.limit) {
+  search(
+    term: string,
+    page: number = 1,
+    limit: number = this.limit
+  ): Promise<SvgApiResultInterface> {
     return new Promise(resolve => {
       let icons: SvgApiIconInterface[] = [];
       let total: number;
       let remains = limit;
       const promises = [];
       while (remains > 0) {
-        const start = icons.length + (page - 1) * limit;
+        const start = limit - remains + (page - 1) * limit;
         const url = `list/?start=${start}&search=${term}&limit=20`;
         promises.push(
           new Promise(resolve => {

@@ -3,5 +3,5 @@ export interface SvgApiIconInterface {
   slug: string;
   title: string;
   url: string;
-  svg?: string;
+  svg: string;
 }
